@@ -1,4 +1,4 @@
-Hey there! In this guide, we'll walk you through setting up a WebSocket connection through IBM API Connect to an IBM Watson Virtual Assistant. We'll create an API, implement a WebSocket handler using GatewayScript, and test the connection with a WebSocket client. Let's get started!
+Hey there! In this guide, we'll walk you through setting up a WebSocket connection in IBM API Connect. We'll create an API, implement a WebSocket handler using GatewayScript, and test the connection with a WebSocket client. Let's get started!
 
 ## Overview
 
