@@ -1,24 +1,3 @@
-<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-
-- [API Connect WebSocket Integration](#api-connect-websocket-integration)
-  * [Approach 1: WebSocket Upgrade Policy](#approach-1-websocket-upgrade-policy)
-      - [1. On the server, create a new directory and Install the dependencies for the Node.js WebSocket server:](#1-on-the-server-create-a-new-directory-and-install-the-dependencies-for-the-nodejs-websocket-server)
-      - [2. creat a file in your server, name it and copy the following nodejs code:](#2-creat-a-file-in-your-server-name-it-and-copy-the-following-nodejs-code)
-      - [3. Start the Node.js WebSocket server:](#3-start-the-nodejs-websocket-server)
-      - [4. In API Connect, create a new API with a WebSocket Upgrade policy.](#4-in-api-connect-create-a-new-api-with-a-websocket-upgrade-policy)
-      - [5. Set the target URL of the WebSocket Upgrade policy to the Node.js WebSocket server (in this example we set the port to 8091).](#5-set-the-target-url-of-the-websocket-upgrade-policy-to-the-nodejs-websocket-server-in-this-example-we-set-the-port-to-8091)
-      - [6. Include the wss scheme in the definition file of the API. Example:](#6-include-the-wss-scheme-in-the-definition-file-of-the-api-example)
-      - [7. Deploy the API to the API Connect gateway.](#7-deploy-the-api-to-the-api-connect-gateway)
-      - [8. Test the WebSocket connection using the websocat command:](#8-test-the-websocket-connection-using-the-websocat-command)
-  * [Approach 2: API Connect GatewayScript](#approach-2-api-connect-gatewayscript)
-      - [Overview](#overview)
-      - [1. Creating an API in API Connect](#1-creating-an-api-in-api-connect)
-      - [2. Create a GatewayScript to handle the web socket connection](#2-create-a-gatewayscript-to-handle-the-web-socket-connection)
-      - [3. Testing the WebSocket Connection](#3-testing-the-websocket-connection)
-  * [Wrapping Up](#wrapping-up)
-
-<!-- TOC end -->
-
 # API Connect WebSocket Integration
 
 This repository demonstrates two different approaches for integrating WebSockets in API Connect.
