@@ -12,7 +12,7 @@ In this approach, API Connect uses a WebSocket Upgrade policy to handle WebSocke
 npm install ws
 ```
 
-#### 2. creat a file in your server, name it and copy the following nodejs code:
+#### 2. creat a file in your server, name it `websocket_server.js` and copy the following nodejs code:
 ```javascript
 const WebSocket = require('ws');
 
