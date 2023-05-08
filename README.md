@@ -68,7 +68,11 @@ websocat -v --insecure wss://your-api-connect-gateway/your-websocket-path
 ```
 
 ## Approach 2: API Connect GatewayScript
-In this approach, we'll walk you through setting up a WebSocket connection in IBM API Connect. We'll create an API, implement a WebSocket handler using GatewayScript, and test the connection with a WebSocket client. Let's get started!
+In this approach, we'll walk you through setting up a WebSocket connection in IBM API Connect. We'll create an API, implement a WebSocket handler using GatewayScript, and test the connection with a WebSocket client. 
+
+Please not that API Connect with DataPower gateway does not support sending and receiving WebSocket frames natively. DataPower supports establishing a WebSocket connection, but it is primarily intended to be used as a passthrough, meaning that the WebSocket communication is handled by the backend service.
+
+Let's get started!
 
 #### Overview
 
