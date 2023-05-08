@@ -10,7 +10,7 @@ Hey there! In this guide, we'll walk you through setting up a WebSocket connecti
 
 - First, let's create an API in IBM API Connect that'll route WebSocket requests to the right handler.
 - In the `paths` section of your API's Swagger file, define a path for the WebSocket connection.
-- Don't forget to include the WebSocket schemes in the `schemes` section of the Swagger file. Use `wss` for secure connections and/or `ws` for non-secure ones.
+- Don't forget to include the WebSocket schemes in the `schemes` section of the Swagger file. In this guide we have added the `wss` to the API definition.
 
 Example:
 
