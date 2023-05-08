@@ -4,7 +4,7 @@ This repository demonstrates two different approaches for integrating WebSockets
 
 ## Approach 1: WebSocket Upgrade Policy
 
-In this approach, API Connect uses a WebSocket Upgrade policy to handle WebSocket connections.In this case, the gateway will act as a passthrough web socket gateway
+In this approach, API Connect uses a WebSocket Upgrade policy to handle WebSocket connections.
 
 #### 1. On the server, create a new directory and Install the dependencies for the Node.js WebSocket server:
 
@@ -41,6 +41,9 @@ server.on('connection', (socket) => {
   });
 });
 ```
+
+The above nodejs application will be listening on port 8091 on the server that it runs on. Whenever a message is received, it will change all small letters to upper case.
+
 #### 3. Start the Node.js WebSocket server:
 
 ```bash
@@ -66,6 +69,7 @@ schemes:
 ```bash
 websocat -v --insecure wss://your-api-connect-gateway/your-websocket-path
 ```
+Now whatever you type in the terminal, you should receive the same message in upperase letters. This concludes the first approach. 
 
 ## Approach 2: API Connect GatewayScript
 In this approach, we'll walk you through setting up a WebSocket connection in IBM API Connect. We'll create an API, implement a WebSocket handler using GatewayScript, and test the connection with a WebSocket client. 
